@@ -10,6 +10,6 @@ Contiene un buscador, que permite al usuario agregar una parte del texto de la t
 Si no hay tareas para mostrar, da un mensaje al usuario de que ya completó todas sus tareas y que está listo para descansar.
 
 
-## El grupo esta cointituido por 
+## El grupo esta constituido por 
 # Franco Benitez & Abigail Corrales
 
