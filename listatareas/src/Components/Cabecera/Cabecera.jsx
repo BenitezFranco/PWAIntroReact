@@ -1,21 +1,37 @@
 import React from 'react';
-import { Navbar, NavbarBrand, Nav, NavItem, NavLink } from 'reactstrap';
+import { Navbar, Nav, NavItem } from 'reactstrap';
 import style from './Cabecera.module.css'; // Importar el archivo CSS de estilos
+import Imagen from './titulo.png'; //
+import logo from './logoGit.png'; //
+function Cabecera() { 
 
-function Cabecera (){
-  return (
-    <div className={style.header}>
-    <Navbar className={style.navbar} color="light" light expand="md">
-         <NavbarBrand className={style.navbarbrand} href="/">ANOTADOR DE TAREAS</NavbarBrand>
-         <Nav className="mr-auto" navbar>
-           <NavItem>
-             <NavLink className={style.navlink}href="https://github.com/BenitezFranco/PWAIntroReact">GitHub</NavLink>
-           </NavItem>
-         </Nav>
-       </Navbar>
-    </div>
-  )
+
+return (
+    
+<div>
+
+    <Navbar style={{
+        backgroundImage: `url(${Imagen})`,
+        backgroundSize: 'cover',
+        backgroundRepeat: 'no-repeat',
+        width: '100%',
+        height: '300px', // Ajusta la altura según sea necesario
+    }} className={style.navbar} color="light" light expand="md">
+
+        <div className={style.container}>
+    <img src={logo} alt="Logo" className={style.logo} />
+   
+  </div>
+    </Navbar>
+</div>
+)
+
+
 }
+
+
+
+
 
 
 export default Cabecera;

@@ -1,11 +1,16 @@
 import React, { useState } from "react";
-
 import { Container, Row, Col } from 'react-bootstrap';
+import Style from './Home.module.css';
+import Cabecera from "../../Components/Cabecera/Cabecera";
+
+
+
+//COMPONENTES
 import TexNota from "../../Components/TexNota/TexNota";
 import ListaNota from "../../Components/ListaNota/ListaNota";
 import ContadorTareas from "../../Components/ContadorNotas/ContadorNotas";
 import ListaFiltrada from "../../Components/ListaFiltrada/ListaFiltrada";
-import Cabecera from "../../Components/Cabecera/Cabecera";
+
 
 
 
@@ -29,10 +34,10 @@ function Home() {
   };
 
   return (
-      <div className="header bg-light py-4">
+      <div  className={Style.Appheader}>
        
         <Cabecera/> 
-      <Container>
+      <Container  >
         <Row className="mb-3">
           <Col>
             <TexNota agregarNota={agregarNota} />

@@ -8,18 +8,33 @@ function ContadorNota({ nota }) {
 
   const porcentajeCompletado = (notaCompletada /nota.length) * 100;
 
-  // Verificamos si no hay tareas para mostrar
-  if (totalNota === 0) {
-    return <p>No hay tareas para mostrar. ¡Estás listo para descansar!</p>;
-  }
+  // EXEPCION DE RETURN, SOLO PARA UNOS MSJ DE EXEPCION
+  const mensaje1 = 'No hay tareas para mostrar. ¡Estás listo para descansar!';
+  const mensaje2 = 'Ya has completado todas tus tareas!!'
+  const mensaje3 = 'Empieza pronto y terminaras antes'
+  
 
-  if (totalNota === notaCompletada) {
-    return <p>Ya has completado todas tus tareas!!</p>;
-  }
+  let mensajeMostrar= '';
+  
+ if (totalNota === 0){
+  mensajeMostrar = mensaje1
+  return  mensajeMostrar;
+ }if(totalNota === notaCompletada){
+  mensajeMostrar = mensaje2
+  return  mensajeMostrar;
+ }else{
+  mensajeMostrar = mensaje3;
+ }
+  
+
+  
+
 
   return (
-    <div>
 
+
+    <div>
+{mensajeMostrar}
       <ListGroup>
         <ListGroupItem className="justify-content-between">
           TOTAL DE TAREAS {' '}

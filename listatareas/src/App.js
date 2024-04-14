@@ -4,7 +4,7 @@ import Home from './paginas/Home/Home';
 
 function App() {
   return (
-    <div className="App">
+    <div className="App" >
       <header className="App-header">
         <Home />
       </header>
