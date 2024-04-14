@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 
-import style from "./Home.module.css";
 
 import TexNota from "../../Components/TexNota/TexNota";
 import ListaNota from "../../Components/ListaNota/ListaNota";
