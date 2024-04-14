@@ -1,42 +1,59 @@
-.container {
-  text-align: center;
+/* Estilos para el contenedor principal */
+.header {
+  background-color: #f0f0f0;
+  padding: 20px;
+}
 
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: rgb(204, 240, 45);
-  min-height: 100vh;
+/* Estilos para el contenedor interno */
+.contenedor {
+  max-width: 800px;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
 
-.header {
-  background-image: url("fondoApp.jpg");
-  background-size: cover; /* Para asegurar que la imagen cubra todo el contenedor */
-  background-position: center; /* Para centrar la imagen */
-  background-repeat: no-repeat; /* Para evitar que la imagen se repita */
+/* Estilos para el título */
+.contenedor h1 {
+  text-align: center;
+  margin-bottom: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Estilos para la sección del buscador */
+.buscador {
+  display: flex;
+  gap: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Estilos para la sección de la lista */
+.lista {
+  display: flex;
+  gap: 20px;
 }
 
-.App-link {
-  color: #f2fbfd;
+/* Estilos para el componente de contador */
+.contador {
+  font-weight: bold;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Estilos para el componente de lista de notas */
+.lista-notas {
+  list-style-type: none;
+  padding: 0;
+}
+
+.lista-notas li {
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.lista-notas li + li {
+  margin-top: 10px;
+}
+
+/* Estilos para el cuadro de texto */
+.cuadro-texto {
+  margin: 10 auto;
+  text-align: center;
 }

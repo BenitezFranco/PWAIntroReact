@@ -1,0 +1,27 @@
+/* Estilos para el encabezado */
+.header {
+    background-image: url('./imgCabecera.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+.navbar {
+    background-color: #2079d2; /* Color de fondo */
+    padding: 10px 20px; /* Espaciado interno */
+  }
+  
+  .navbar-brand {
+    color: #fff; /* Color del texto */
+    font-size: 24px; /* Tamaño de la fuente */
+  }
+  
+  .nav-link {
+    color: #fff; /* Color del texto de los enlaces */
+    margin-right: 15px; /* Espaciado entre enlaces */
+    font-size: 18px; /* Tamaño de la fuente */
+  }
+  
+  .nav-link:hover {
+    color: #ccc; /* Color del texto de los enlaces al pasar el ratón por encima */
+  }
+  

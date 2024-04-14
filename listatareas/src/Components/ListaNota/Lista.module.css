@@ -1,0 +1,34 @@
+.listanotas {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  .notaitem {
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    padding: 10px;
+  }
+  
+  .notacheckbox {
+    margin-bottom: 10px;
+  }
+  
+  .notalabel {
+    font-size: 20px;
+    font-family: Arial, sans-serif;
+    
+  }
+  
+  .completed {
+    color: green;
+    font-size: 30px;
+  }
+  
+  .notcompleted {
+    color: inherit;
+  }
+  
+  .notadelete {
+    text-align: right;
+  }
+  
