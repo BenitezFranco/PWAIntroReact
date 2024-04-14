@@ -8,6 +8,7 @@ import ListaFiltrada from "../../Components/ListaFiltrada/ListaFiltrada";
 import Cabecera from "../../Components/Cabecera/Cabecera";
 
 
+
 function Home() {
   const [nota, setNota] = useState([]);
 
