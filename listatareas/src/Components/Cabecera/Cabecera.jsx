@@ -19,8 +19,9 @@ return (
     }} className={style.navbar} color="light" light expand="md">
 
         <div className={style.container}>
-    <img src={logo} alt="Logo" className={style.logo} />
-   
+            <a target='blank' href="https://github.com/BenitezFranco/PWAIntroReact/tree/master"><img src={logo} alt="Logo" className={style.logo}  />
+   </a>
+    
   </div>
     </Navbar>
 </div>

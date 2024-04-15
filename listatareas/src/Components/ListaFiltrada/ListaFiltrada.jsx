@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { FormGroup, Input, Button, Label, Col } from 'reactstrap';
+import Nota from '../Nota/Nota';
 import style from '../ListaNota/Lista.module.css'; // Importa tu archivo CSS para estilos personalizados
 
 function ListaFiltrada({nota,cambiarEstado, eliminarNota}) {
@@ -33,28 +34,12 @@ function ListaFiltrada({nota,cambiarEstado, eliminarNota}) {
         </FormGroup>
         <ul className="list-unstyled">
           {listaFiltrada && listaFiltrada.map(item => (
-            <li key={item.id} className="d-flex justify-content-between align-items-center mb-2">
-            
-              <FormGroup switch className={style.notalabel}>
-            <Input
-              type="checkbox"
-              checked={item.completed}
-              onChange={() => cambiarEstado(item.id)}
-            />
-            <Label check className={style.notalabel}>
-              <span className={item.completed ? style.completed : style.notcompleted}>
-                {item.text}
-              </span>
-            </Label>
-          </FormGroup>
-          <FormGroup check row className={style.notadelete}>
-            <Col sm={{ offset: 2, size: 10 }}>
-              <Button color="danger" onClick={() => eliminarNota(item.id)}>
-                Eliminar
-              </Button>
-            </Col>
-          </FormGroup>
-            </li>
+             <Nota
+             key={item.id}
+             nota={item}
+             cambiarEstado={cambiarEstado}
+             eliminarNota={eliminarNota}
+           />
           ))}
         </ul>
     </div>
