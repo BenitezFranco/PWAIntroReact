@@ -1,5 +1,5 @@
 import React from 'react';
-import { Navbar, Nav, NavItem } from 'reactstrap';
+import { Navbar } from 'reactstrap';
 import style from './Cabecera.module.css'; // Importar el archivo CSS de estilos
 import Imagen from './titulo.png'; //
 import logo from './logoGit.png'; //

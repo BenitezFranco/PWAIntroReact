@@ -1,12 +1,12 @@
 import React from 'react';
 import { ListGroup, ListGroupItem, Badge, Progress } from 'reactstrap';
 
-function ContadorNota({ nota }) {
-  // Calculamos el número total de nota (que nota es el arreglo de notas YA SE QUE NO TIENE UN NOMBRE MUUUY DESCRIPTIVO LA VERDAD)
-  const totalNota = nota ? nota.length : 0;
-  const notaCompletada = nota ? nota.filter(nota => nota.completed).length : 0;
+function ContadorTareas({ tareas }) {
+  // Calculamos el número total de tareas (que tareas es el arreglo de notas YA SE QUE NO TIENE UN NOMBRE MUUUY DESCRIPTIVO LA VERDAD)
+  const totalTareas = tareas ? tareas.length : 0;
+  const tareaCompletada = tareas ? tareas.filter(tareas => tareas.completed).length : 0;
 
-  const porcentajeCompletado = (notaCompletada /nota.length) * 100;
+  const porcentajeCompletado = (tareaCompletada /tareas.length) * 100;
 
   // EXEPCION DE RETURN, SOLO PARA UNOS MSJ DE EXEPCION
   const mensaje1 = 'No hay tareas para mostrar. ¡Estás listo para descansar!';
@@ -16,10 +16,10 @@ function ContadorNota({ nota }) {
 
   let mensajeMostrar= '';
   
- if (totalNota === 0){
+ if (totalTareas === 0){
   mensajeMostrar = mensaje1
   return  mensajeMostrar;
- }if(totalNota === notaCompletada){
+ }if(totalTareas === tareaCompletada){
   mensajeMostrar = mensaje2
   return  mensajeMostrar;
  }else{
@@ -39,11 +39,11 @@ function ContadorNota({ nota }) {
         <ListGroupItem className="justify-content-between">
           TOTAL DE TAREAS {' '}
           <Badge pill>
-            {totalNota}
+            {totalTareas}
           </Badge>
            TAREAS COMPLETADAS: {''}
           <Badge pill>
-            {notaCompletada} de {totalNota}
+            {tareaCompletada} de {totalTareas}
           </Badge>
         </ListGroupItem>
         
@@ -65,4 +65,4 @@ function ContadorNota({ nota }) {
   );
 }
 
-export default ContadorNota;
+export default ContadorTareas;

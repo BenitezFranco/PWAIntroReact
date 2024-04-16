@@ -1,18 +1,18 @@
 import React, { useState } from 'react';
-import Style from './TexNota.module.css';
+import Style from './TextTareas.module.css';
 
-function TexNota({ agregarNota}) {
-  const [nota, setNota] = useState('');
+function TextTarea({ agregarTarea}) {
+  const [tareas, setTareas] = useState('');
 
   const manejoCambio = (event) => {
-    setNota(event.target.value);
+    setTareas(event.target.value);
   };
 
   const manejoEnvio = (event) => {
     event.preventDefault();
-    if (!nota.trim()) return;
-    agregarNota(nota);
-    setNota('');
+    if (!tareas.trim()) return;
+    agregarTarea(tareas);
+    setTareas('');
   };
 
   return (
@@ -22,7 +22,7 @@ function TexNota({ agregarNota}) {
           type="text"
           className="form-control"
           placeholder="¿Qué quieres recordar?"
-          value={nota}
+          value={tareas}
           onChange={manejoCambio}
         />
         <div className="input-group-append">
@@ -35,4 +35,4 @@ function TexNota({ agregarNota}) {
   );
 }
 
-export default TexNota;
+export default TextTarea;

@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
-import { FormGroup, Input, Button, Label, Col } from 'reactstrap';
-import Nota from '../Nota/Nota';
-import style from '../ListaNota/Lista.module.css'; // Importa tu archivo CSS para estilos personalizados
+import { FormGroup, Input } from 'reactstrap';
+import Tarea from '../Tarea/Tarea';
 
-function ListaFiltrada({nota,cambiarEstado, eliminarNota}) {
+
+function ListaFiltrada({tareas,cambiarEstado, eliminarTarea}) {
   const [terminoBusqueda, setTerminoBusqueda] = useState('');
   const [listaFiltrada, setListaFiltrada] = useState([]);
 
@@ -14,7 +14,7 @@ function ListaFiltrada({nota,cambiarEstado, eliminarNota}) {
       setListaFiltrada([]); // Limpiar las notas filtradas si el término de búsqueda está vacío
     } else {
       // Filtrar las notas según el término de búsqueda
-      const filteredList = nota.filter(item =>
+      const filteredList = tareas.filter(item =>
         item.text.toLowerCase().includes(value.toLowerCase())
       );
       setListaFiltrada(filteredList);
@@ -34,11 +34,11 @@ function ListaFiltrada({nota,cambiarEstado, eliminarNota}) {
         </FormGroup>
         <ul className="list-unstyled">
           {listaFiltrada && listaFiltrada.map(item => (
-             <Nota
+             <Tarea
              key={item.id}
-             nota={item}
+             tareas={item}
              cambiarEstado={cambiarEstado}
-             eliminarNota={eliminarNota}
+             eliminarTarea={eliminarTarea}
            />
           ))}
         </ul>

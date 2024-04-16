@@ -6,31 +6,31 @@ import Cabecera from "../../Components/Cabecera/Cabecera";
 
 
 //COMPONENTES
-import TexNota from "../../Components/TexNota/TexNota";
-import ListaNota from "../../Components/ListaNota/ListaNota";
-import ContadorTareas from "../../Components/ContadorNotas/ContadorNotas";
+import TextTarea from "../../Components/TextTarea/TextTarea";
+import ListaTareas from "../../Components/ListaTareas/ListaTareas";
+import ContadorTareas from "../../Components/ContadorTareas/ContadorTareas";
 import ListaFiltrada from "../../Components/ListaFiltrada/ListaFiltrada";
 
 
 
 
 function Home() {
-  const [nota, setNota] = useState([]);
+  const [tareas, setTareas] = useState([]);
 
-  const agregarNota = (text) => {
-    setNota([...nota, { id: Date.now(), text, completed: false }]);
+  const agregarTarea = (text) => {
+    setTareas([...tareas, { id: Date.now(), text, completed: false }]);
   };
 
   const cambiarEstado = (id) => {
-    setNota(
-      nota.map((nota) =>
-        nota.id === id ? { ...nota, completed: !nota.completed } : nota
+    setTareas(
+      tareas.map((tareas) =>
+        tareas.id === id ? { ...tareas, completed: !tareas.completed } : tareas
       )
     );
   };
 
-  const eliminarNota = (id) => {
-    setNota(nota.filter((nota) => nota.id !== id));
+  const eliminarTarea = (id) => {
+    setTareas(tareas.filter((tareas) => tareas.id !== id));
   };
 
   return (
@@ -40,21 +40,21 @@ function Home() {
       <Container  >
         <Row className="mb-3">
           <Col>
-            <TexNota agregarNota={agregarNota} />
+            <TextTarea agregarTarea={agregarTarea} />
           </Col>
         </Row>
         <Row className="mb-3">
           <Col className="text-center">
-          <ListaFiltrada nota={nota} cambiarEstado={cambiarEstado} eliminarNota={eliminarNota} />
+          <ListaFiltrada tareas={tareas} cambiarEstado={cambiarEstado} eliminarTarea={eliminarTarea} />
           </Col>
         </Row>
         <Row>
           <Col>
-          <ContadorTareas nota={nota} />
-          <ListaNota
-            nota={nota}
+          <ContadorTareas tareas={tareas} />
+          <ListaTareas
+            tareas={tareas}
             cambiarEstado={cambiarEstado}
-            eliminarNota={eliminarNota}
+            eliminarTarea={eliminarTarea}
           />
           </Col>
         </Row>

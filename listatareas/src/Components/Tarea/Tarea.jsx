@@ -1,26 +1,26 @@
 // NotaItem.js
 import React from 'react';
 import { FormGroup, Input, Label, Col, Button } from 'reactstrap';
-import style from '../ListaNota/Lista.module.css';
+import style from '../ListaTareas/Lista.module.css';
 
-function Nota({ nota, cambiarEstado, eliminarNota }) {
+function Tarea({ tareas, cambiarEstado, eliminarTarea }) {
   return (
     <li className={style.notaitem}>
       <FormGroup switch className={style.notalabel}>
         <Input
           type="checkbox"
-          checked={nota.completed}
-          onChange={() => cambiarEstado(nota.id)}
+          checked={tareas.completed}
+          onChange={() => cambiarEstado(tareas.id)}
         />
         <Label check className={style.notalabel}>
-          <span className={nota.completed ? style.completed : style.notcompleted}>
-            {nota.text}
+          <span className={tareas.completed ? style.completed : style.notcompleted}>
+            {tareas.text}
           </span>
         </Label>
       </FormGroup>
       <FormGroup check row className={style.notadelete}>
         <Col sm={{ offset: 2, size: 10 }}>
-          <Button color="danger" onClick={() => eliminarNota(nota.id)}>
+          <Button color="danger" onClick={() => eliminarTarea(tareas.id)}>
             Eliminar
           </Button>
         </Col>
@@ -29,4 +29,4 @@ function Nota({ nota, cambiarEstado, eliminarNota }) {
   );
 }
 
-export default Nota;
+export default Tarea;
