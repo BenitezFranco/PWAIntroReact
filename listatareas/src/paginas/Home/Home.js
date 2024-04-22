@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { Container, Row, Col } from 'react-bootstrap';
 import Style from './Home.module.css';
 import Cabecera from "../../Components/Cabecera/Cabecera";
-import Titulo from "../../Components/Titulo/Titulo";
 
 
 
@@ -11,6 +10,7 @@ import TextTarea from "../../Components/TextTarea/TextTarea";
 import ListaTareas from "../../Components/ListaTareas/ListaTareas";
 import ContadorTareas from "../../Components/ContadorTareas/ContadorTareas";
 import ListaFiltrada from "../../Components/ListaFiltrada/ListaFiltrada";
+import Titulo from "../../Components/Titulo/Titulo";
 
 
 
