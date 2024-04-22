@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Container, Row, Col } from 'react-bootstrap';
 import Style from './Home.module.css';
 import Cabecera from "../../Components/Cabecera/Cabecera";
+import Titulo from "../../Components/Titulo/Titulo";
 
 
 
@@ -37,6 +38,7 @@ function Home() {
       <div  className={Style.Appheader}>
        
         <Cabecera/> 
+        <Titulo texto=" Lista de Tareas (To-Do List)"/>
       <Container  >
         <Row className="mb-3">
           <Col>
