@@ -65,3 +65,20 @@ Para buscar escribimos en la casilla "Busca.."
 </li>
 </ul>
 
+<h3> Preguntas y respuestas del TP</h3>
+<p>2)a)i)Explicar la función de los siguientes archivos iniciales: index.js, App.js, index.css y package-json.js</p>
+
+<p> 
+<ul>
+<li>index.js: Es donde se renderiza el componente principal de la aplicación en el DOM del navegador.</li>
+<li>
+App.js: Suele contener el componente principal de la aplicación. Es donde se define la estructura general de la aplicación y dónde se organizan otros componentes de React.
+</li>
+<li>
+index.css: Este archivo es donde se definen los estilos globales para la aplicación. Los estilos se aplicarán a todos los componentes de la aplicación, a menos que se sobrescriban en los archivos de estilos de componentes individuales.
+</li>
+<li>
+package.json: Es un descriptor del proyecto que contiene información sobre él, como su nombre, versión, dependencias, scripts de inicio, etc. También se incluyen las dependencias del proyecto, incluidas las bibliotecas de React y otras bibliotecas externas que la aplicación pueda necesitar para funcionar correctamente.
+</li>
+</ul>
+</p>
