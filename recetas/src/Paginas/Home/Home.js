@@ -1,34 +1,33 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
-
 const Home = () => {
-  const [elements, setElements] = useState([]);
+  const [recetas, setRecetas] = useState([]);
 
   useEffect(() => {
-    const fetchElements = async () => {
+    const fetchRecetas = async () => {
       try {
-        const response = await fetch('../../mocks/recetas.json');
+        const response = await fetch('../mocks/recetas.json');
         const data = await response.json();
-        setElements(data.elements);
+        setRecetas(data.recetas);
       } catch (error) {
-        console.error('Error al obtener los elementos:', error);
+        console.error('Error al obtener las recetas:', error);
       }
     };
 
-    fetchElements();
+    fetchRecetas();
   }, []);
 
   return (
     <div>
-      <h1>Lista de Elementos</h1>
+      <h1>Lista de Recetas</h1>
       <div className="card-container">
-        {elements.map(element => (
-          <Link key={element.id} to={`/details/${element.id}`}>
+        {recetas.map(receta => (
+          <Link key={receta.id} to={`/receta/${receta.id}`}>
             <div className="card">
-              <img src={element.image} alt={element.title} />
-              <h2>{element.title}</h2>
-              <p>{element.description}</p>
+              <img src={receta.imagen} alt={receta.titulo} />
+              <h2>{receta.titulo}</h2>
+              <p>{receta.descripcion}</p>
             </div>
           </Link>
         ))}
@@ -38,3 +37,4 @@ const Home = () => {
 };
 
 export default Home;
+

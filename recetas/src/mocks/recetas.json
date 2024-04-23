@@ -4,37 +4,38 @@
       "id": 1,
       "titulo": "Asado",
       "descripcion": "La receta clásica de asado argentino, con cortes de carne seleccionados y cocinados a la parrilla.",
-      "imagen": "/recetas/src/mocks/Imagenes/asado.jpg"
+      "imagen": "./Imagenes/asado.jpg"
     },
     {
       "id": 2,
       "titulo": "Empanadas",
       "descripcion": "Deliciosas empanadas rellenas de carne, típicas de la gastronomía argentina.",
-      "imagen": "/src/mocks/Imagenes/empanadas.PNG"
+      "imagen": "./Imagenes/empanadas.PNG"
     },
     {
       "id": 3,
       "titulo": "Milanesa a la napolitana",
       "descripcion": "La versión argentina de la milanesa, cubierta con salsa de tomate, jamón y queso derretido.",
-      "imagen": "/src/mocks/Imagenes/milanesa.jpg"
+      "imagen": "./Imagenes/milanesa.jpg"
     },
     {
       "id": 4,
       "titulo": "Ñoquis de papa",
       "descripcion": "Ñoquis caseros de papa, servidos con salsa de tu elección.",
-      "imagen": "/src/mocks/Imagenes/noquis.jpg"
+      "imagen": "./Imagenes/noquis.jpg"
     },
     {
       "id": 5,
       "titulo": "Locro",
       "descripcion": "Un guiso tradicional argentino, hecho a base de maíz, carne y verduras.",
-      "imagen": "/src/mocks/Imagenes/locro.jpg"
+      "imagen": "./Imagenes/locro.jpg"
     },
     {
       "id": 6,
       "titulo": "Tarta de carne",
       "descripcion": "Una tarta salada rellena con una mezcla de carne picada, huevos y condimentos.",
-      "imagen": "/src/mocks/Imagenes/tarta.jpg"
+      "imagen": "./Imagenes/tarta.jpg"
     }
   ]
 }
+

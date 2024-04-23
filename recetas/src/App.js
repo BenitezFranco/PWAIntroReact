@@ -1,18 +1,18 @@
-import Home from './Paginas/Home/Home.js';
+import React from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import DetalleReceta from './Paginas/Recetas/Recetas.js';
-
-
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Home from './Paginas/Home/Home';
+import DetalleReceta from './Paginas/Recetas/Recetas';
+//       
 function App() {
   return (
     <Router>
-      <Switch>
-        <Route exact path="/" component={Home} />
-        <Route path="/receta/:id" component={DetalleReceta} />
-      </Switch>
+      <Routes>
+        <Route exact path="/" element={<Home />} />
+        <Route path="/receta/:id" element={<DetalleReceta />} />
+      </Routes>
     </Router>
   );
 }
 
-ReactDOM.render(<App />, document.getElementById('root'));
+export default App;
