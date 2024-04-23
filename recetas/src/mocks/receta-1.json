@@ -1,0 +1,11 @@
+{
+    "id": 1,
+    "titulo": "Asado",
+    "ingredientes": [
+      "1kg de carne de vaca (entraña, costilla, vacío, etc.)",
+      "Sal gruesa",
+      "Leña o carbón para la parrilla"
+    ],
+    "instrucciones": 
+    "1. Preparar el fuego en la parrilla y esperar a que las brasas estén en su punto.\n2. Salpimentar la carne al gusto.\n3. Colocar la carne en la parrilla y cocinar al punto deseado, volteándola de vez en cuando.\n4. Retirar la carne de la parrilla y dejar reposar unos minutos antes de servir."
+  }
