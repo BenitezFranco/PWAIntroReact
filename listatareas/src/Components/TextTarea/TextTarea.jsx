@@ -1,8 +1,9 @@
-import React, { useState } from 'react';
-import Style from './TextTareas.module.css';
+import React, { useState } from "react";
+import Style from "./TextTareas.module.css";
 
-function TextTarea({ agregarTarea}) {
-  const [tareas, setTareas] = useState('');
+function TextTarea({ agregarTarea }) {
+  //Aca tengo entendido que van cargando de una tarea, asi que el nombre del estado deberia estar en singular.
+  const [tareas, setTareas] = useState("");
 
   const manejoCambio = (event) => {
     setTareas(event.target.value);
@@ -12,7 +13,7 @@ function TextTarea({ agregarTarea}) {
     event.preventDefault();
     if (!tareas.trim()) return;
     agregarTarea(tareas);
-    setTareas('');
+    setTareas("");
   };
 
   return (
@@ -26,6 +27,7 @@ function TextTarea({ agregarTarea}) {
           onChange={manejoCambio}
         />
         <div className="input-group-append">
+          {/* En el resto de la app usan Button de reactstrap, aca tambien deberian */}
           <button className="btn btn-primary" type="submit">
             Agregar a la lista
           </button>
