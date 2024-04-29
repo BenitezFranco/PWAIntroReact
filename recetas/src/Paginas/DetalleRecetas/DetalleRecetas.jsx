@@ -32,13 +32,13 @@ const DetalleReceta = () => {
 
   // Aquí puedes renderizar la información de la receta
   return (
-    <div>
-      <h2>{receta.titulo}</h2>
-      <h3>Ingredientes:</h3>
-      <ul>
+    <div className="container mx-auto px-4 py-8">
+      <h2 className="text-3xl font-bold mb-4">{receta.titulo}</h2>
+      <h3 className='text-xl font-bold mb-2'>Ingredientes:</h3>
+      <ul className='list-disc list-inside'>
         {listaIngredientes}
       </ul>
-      <h3>Instrucciones:</h3>
+      <h3 className='text-xl font-bold mb-2'>Instrucciones:</h3>
       <p>{receta.instrucciones}</p>
     </div>
   );
