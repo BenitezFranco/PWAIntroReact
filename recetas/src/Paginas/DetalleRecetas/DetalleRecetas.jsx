@@ -1,5 +1,7 @@
 import { useParams } from 'react-router-dom';
 import React, { useState, useEffect } from 'react';
+import {PDFDownloadLink} from "@react-pdf/renderer";
+import PDF from "../../Componentes/PDF/PDF";
 
 const DetalleReceta = () => {
   // Obteniendo el id de los parámetros de la URL
@@ -40,6 +42,9 @@ const DetalleReceta = () => {
       </ul>
       <h3 className='text-xl font-bold mb-2'>Instrucciones:</h3>
       <p>{receta.instrucciones}</p>
+      <PDFDownloadLink document={<PDF/>} fileName={receta.titulo}>
+            <button>Descargar en PDF</button>
+      </PDFDownloadLink>
     </div>
   );
 };
