@@ -1,6 +1,7 @@
 {
     "id": 2,
     "titulo": "Empanadas",
+    "imagen": "./Imagenes/asado.jpg", 
     "ingredientes": [
       "Masa para empanadas",
       "Carne picada",

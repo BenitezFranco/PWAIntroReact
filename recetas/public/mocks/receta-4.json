@@ -1,6 +1,7 @@
 {
     "id": 4,
     "titulo": "Ñoquis de papa",
+    "imagen": "./Imagenes/asado.jpg", 
     "ingredientes": [
       "Papas",
       "Harina",

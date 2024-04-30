@@ -1,6 +1,7 @@
 {
     "id": 5,
     "titulo": "Locro",
+    "imagen": "./Imagenes/asado.jpg", 
     "ingredientes": [
       "Maíz blanco",
       "Carne de vaca",

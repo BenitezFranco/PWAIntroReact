@@ -1,6 +1,11 @@
+
+
 {
+
+
     "id": 1,
     "titulo": "Asado",
+    "imagen": "/public/mocks/Imagenes/asado.jpg", 
     "ingredientes": [
       "1kg de carne de vaca (entraña, costilla, vacío, etc.)",
       "Sal gruesa",

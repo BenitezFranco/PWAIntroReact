@@ -1,6 +1,7 @@
 {
     "id": 3,
     "titulo": "Milanesa a la napolitana",
+    "imagen": "./Imagenes/asado.jpg", 
     "ingredientes": [
       "Filetes de carne (pollo, ternera o cerdo)",
       "Pan rallado",
