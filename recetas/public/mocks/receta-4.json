@@ -1,11 +1,21 @@
 {
-    "id": 4,
-    "titulo": "Ñoquis de papa",
-    "imagen": "./Imagenes/asado.jpg", 
-    "ingredientes": [
-      "Papas",
-      "Harina",
-      "Sal"
-    ],
-    "instrucciones": "1. Cocinar las papas en agua hirviendo hasta que estén tiernas.\n2. Pelar las papas y hacer un puré.\n3. Agregar la harina y la sal al puré de papas y mezclar hasta obtener una masa homogénea.\n4. Formar los ñoquis haciendo pequeñas bolitas y marcando con un tenedor.\n5. Cocinar los ñoquis en agua hirviendo hasta que suban a la superficie.\n6. Servir los ñoquis con la salsa de tu elección."
-  }
+  "id": 4,
+  "titulo": "Ñoquis de papa",
+  "imagen":[
+    "/mocks/Imagenes/noquis/noquis.jpg",
+    "/mocks/Imagenes/noquis/noquis1.jpg"
+  ] ,
+  "ingredientes": [
+    "Papas",
+    "Harina",
+    "Sal"
+  ],
+  "instrucciones": [
+    "Cocinar las papas en agua hirviendo hasta que estén tiernas.",
+    "Pelar las papas y hacer un puré.",
+    "Agregar la harina y la sal al puré de papas y mezclar hasta obtener una masa homogénea.",
+    "Formar los ñoquis haciendo pequeñas bolitas y marcando con un tenedor.",
+    "Cocinar los ñoquis en agua hirviendo hasta que suban a la superficie.",
+    "Servir los ñoquis con la salsa de tu elección."
+  ]
+}

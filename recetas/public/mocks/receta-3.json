@@ -1,15 +1,25 @@
 {
-    "id": 3,
-    "titulo": "Milanesa a la napolitana",
-    "imagen": "./Imagenes/asado.jpg", 
-    "ingredientes": [
-      "Filetes de carne (pollo, ternera o cerdo)",
-      "Pan rallado",
-      "Huevo batido",
-      "Aceite para freír",
-      "Salsa de tomate",
-      "Jamón cocido",
-      "Queso mozzarella"
-    ],
-    "instrucciones": "1. Preparar las milanesas pasándolas por huevo batido y luego por pan rallado.\n2. Freír las milanesas en aceite caliente hasta que estén doradas por ambos lados.\n3. Colocar las milanesas en una bandeja para horno.\n4. Cubrir las milanesas con salsa de tomate, jamón cocido y queso mozzarella.\n5. Hornear las milanesas en horno precalentado a 180°C hasta que el queso esté derretido y dorado."
-  }
+  "id": 3,
+  "titulo": "Milanesa a la napolitana",
+  "imagen":[
+    "/mocks/Imagenes/milanesa/milanesa.jpg",
+    "/mocks/Imagenes/milanesa/milanesa1.jpg"
+
+  ], 
+  "ingredientes": [
+    "Filetes de carne (pollo, ternera o cerdo)",
+    "Pan rallado",
+    "Huevo batido",
+    "Aceite para freír",
+    "Salsa de tomate",
+    "Jamón cocido",
+    "Queso mozzarella"
+  ],
+  "instrucciones": [
+    "Preparar las milanesas pasándolas por huevo batido y luego por pan rallado.",
+    "Freír las milanesas en aceite caliente hasta que estén doradas por ambos lados.",
+    "Colocar las milanesas en una bandeja para horno.",
+    "Cubrir las milanesas con salsa de tomate, jamón cocido y queso mozzarella.",
+    "Hornear las milanesas en horno precalentado a 180°C hasta que el queso esté derretido y dorado."
+  ]
+}

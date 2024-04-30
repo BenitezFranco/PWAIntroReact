@@ -10,11 +10,11 @@ function Carrucel( { imagenes }) {
         infiniteLoop={true}
         showThumbs={false}
         showStatus={false}
-        style={{ height: '10px' }}
+       
       >
       {imagenes.map((image, index) => (
           <div key={index}>
-            <img src={image} alt={`Slide ${index + 1}`} className="w-full h-auto" />
+            <img src={image} alt={`Slide ${index + 1}`} className="w-full h-auto max-h-96"  />
           </div>
         ))}
     </Carousel>

@@ -1,15 +1,26 @@
 {
-    "id": 6,
-    "titulo": "Tarta de carne",
-    "imagen": "/public/mocks/Imagenes/asado.jpg", 
-    "ingredientes": [
-      "Masa para tarta",
-      "Carne picada",
-      "Cebolla",
-      "Morron rojo",
-      "Huevo",
-      "Aceitunas verdes",
-      "Condimentos al gusto"
-    ],
-    "instrucciones": "1. Preparar la masa para tarta y forrar un molde.\n2. Saltear la cebolla picada y el morron rojo en una sartén.\n3. Agregar la carne picada y cocinar hasta que esté dorada.\n4. Incorporar los huevos duros picados y las aceitunas picadas.\n5. Condimentar al gusto con sal, pimienta y especias.\n6. Verter la mezcla sobre la masa para tarta.\n7. Hornear en horno precalentado a 180°C hasta que la masa esté dorada."
+  "id": 6,
+  "titulo": "Tarta de carne",
+  "imagen":[
+    "/mocks/Imagenes/tarta/tarta.jpg"
+   
+  ] ,
+  "ingredientes": [
+    "Masa para tarta",
+    "Carne picada",
+    "Cebolla",
+    "Morron rojo",
+    "Huevo",
+    "Aceitunas verdes",
+    "Condimentos al gusto"
+  ],
+  "instrucciones": [
+    "Preparar la masa para tarta y forrar un molde.",
+    "Saltear la cebolla picada y el morron rojo en una sartén.",
+    "Agregar la carne picada y cocinar hasta que esté dorada.",
+    "Incorporar los huevos duros picados y las aceitunas picadas.",
+    "Condimentar al gusto con sal, pimienta y especias.",
+    "Verter la mezcla sobre la masa para tarta.",
+    "Hornear en horno precalentado a 180°C hasta que la masa esté dorada."
+  ]
 }

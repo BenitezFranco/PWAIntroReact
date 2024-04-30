@@ -1,18 +1,28 @@
 {
-    "id": 5,
-    "titulo": "Locro",
-    "imagen": "./Imagenes/asado.jpg", 
-    "ingredientes": [
-      "Maíz blanco",
-      "Carne de vaca",
-      "Chorizo",
-      "Panceta",
-      "Cebolla",
-      "Morron rojo",
-      "Zanahoria",
-      "Calabaza",
-      "Batata",
-      "Sal y pimienta"
-    ],
-    "instrucciones": "1. Remojar el maíz blanco en agua fría durante varias horas o toda la noche.\n2. Cocinar el maíz en agua hasta que esté tierno.\n3. Agregar la carne cortada en trozos, el chorizo y la panceta cortada en trozos grandes.\n4. Agregar las verduras cortadas en trozos grandes.\n5. Cocinar a fuego lento hasta que todo esté bien cocido y espeso.\n6. Servir caliente con pan casero."
-  }
+  "id": 5,
+  "titulo": "Locro",
+  "imagen":[
+    "/mocks/Imagenes/locro/locro.jpg",
+    "/mocks/Imagenes/locro/locro1.jpg"
+  ] ,
+  "ingredientes": [
+    "Maíz blanco",
+    "Carne de vaca",
+    "Chorizo",
+    "Panceta",
+    "Cebolla",
+    "Morron rojo",
+    "Zanahoria",
+    "Calabaza",
+    "Batata",
+    "Sal y pimienta"
+  ],
+  "instrucciones": [
+    "Remojar el maíz blanco en agua fría durante varias horas o toda la noche",
+    "Cocinar el maíz en agua hasta que esté tierno.",
+    "Agregar la carne cortada en trozos, el chorizo y la panceta cortada en trozos grandes.",
+    "Agregar las verduras cortadas en trozos grandes.",
+    " Cocinar a fuego lento hasta que todo esté bien cocido y espeso.",
+    "Servir caliente con pan casero."
+  ]
+}

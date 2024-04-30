@@ -43,12 +43,12 @@ const Pdf = ({ receta }) => (
     <View style={styles.section}>
       <Text style={styles.title}>{receta.titulo}</Text>
        {/* Mostrar la imagen si está presente en el JSON */}
-        {receta.imagen && (
-          <Image
-            src={receta.imagen}
-            style={styles.image}
-          />
-        )}
+       {receta.imagen && receta.imagen.length > 0 && (
+  <Image
+    src={receta.imagen[0]} // Accediendo a la primera imagen del arreglo
+    style={styles.image}
+  />
+)}
       <Text style={styles.subtitle}>Ingredientes:</Text>
       <View>
         {receta.ingredientes.map((ingrediente, index) => (
