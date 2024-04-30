@@ -5,6 +5,7 @@ import Header from "../../Componentes/Header/Header";
 import Footer from "../../Componentes/Footer/Footer.jsx";
 import Carrucel from "../../Componentes/Carrucel/Carrucel.jsx";
 import { Carrucel1, Carrucel2 } from "../../Imagenes/ImagenesCarrucel.jsx";
+import FiltroRecetas from "../../Componentes/FiltroRecetas/FiltroRecetas.jsx";
 
 const Home = () => {
   const [recetas, setRecetas] = useState([]);
@@ -23,6 +24,17 @@ const Home = () => {
     fetchRecetas();
   }, []);
 
+  //filtro 
+  const [filtro, setFiltro] = useState('');
+  
+  const handleChange = (event) => {
+    setFiltro(event.target.value);
+  };
+
+  const recetasFiltradas = recetas.filter(receta =>
+    receta.titulo.toLowerCase().includes(filtro.toLowerCase())
+  );
+
   return (
     <div>
       <div>
@@ -32,14 +44,20 @@ const Home = () => {
 
       <div className="grid grid-cols-3 gap-4">
         <h1 class="col-span-full text-center text-7xl">Nuestras Recetas</h1>
-        {recetas.map((receta) => (
-          <CardReceta
-            id={receta.id}
-            imagen={receta.imagen}
-            titulo={receta.titulo}
-            descripcion={receta.descripcion}
-          />
-        ))}
+        <div className="col-span-1"></div>
+        <div class="col-span-1 text-center text-7xl">
+        <FiltroRecetas filtro={filtro} onFiltroChange={handleChange} />
+        </div>
+        <div className="col-span-1"></div>
+        {recetasFiltradas.map((receta) => (
+        <CardReceta
+          key={receta.id}
+          id={receta.id}
+          imagen={receta.imagen}
+          titulo={receta.titulo}
+          descripcion={receta.descripcion}
+        />
+      ))}
       </div>
       <Footer/>
     </div>
