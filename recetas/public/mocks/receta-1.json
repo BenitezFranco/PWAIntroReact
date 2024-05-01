@@ -6,9 +6,7 @@
     "id": 1,
     "titulo": "Asado",
     "imagen": [
-      "/mocks/Imagenes/asado/asado.jpg",
-      "/mocks/Imagenes/asado/asado1.jpg",
-      "/mocks/Imagenes/asado/asado2.jpg",
+      "/mocks/Imagenes/asado/asadox.jpg",
       "/mocks/Imagenes/asado/asado3.jpg"
     ],
     "ingredientes": [

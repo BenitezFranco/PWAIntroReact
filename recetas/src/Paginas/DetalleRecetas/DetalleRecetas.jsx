@@ -35,7 +35,7 @@ const DetalleReceta = () => {
   return (
     <div>
     <Header />
-    <Carrucel imagenes= {receta.imagen}/>
+    <Carrucel imagenes= {receta.imagen} />
     <div className="container mx-auto px-4 py-8">
     
       <h2 className="uppercase text-3xl text-orange-700 font-sans mb-4">{receta.titulo}</h2>

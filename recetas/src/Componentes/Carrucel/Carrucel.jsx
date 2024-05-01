@@ -14,7 +14,7 @@ function Carrucel( { imagenes }) {
       >
       {imagenes.map((image, index) => (
           <div key={index}>
-            <img src={image} alt={`Slide ${index + 1}`} className="w-full h-auto max-h-96"  />
+            <img src={image} alt={`Slide ${index + 1}`} className="w-50 h-100"  />
           </div>
         ))}
     </Carousel>
