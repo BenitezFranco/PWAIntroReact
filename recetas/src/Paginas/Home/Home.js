@@ -25,15 +25,20 @@ const Home = () => {
   }, []);
 
   //filtro 
+
   const [filtro, setFiltro] = useState('');
-  
+
   const handleChange = (event) => {
     setFiltro(event.target.value);
   };
 
   const recetasFiltradas = recetas.filter(receta =>
-    receta.titulo.toLowerCase().includes(filtro.toLowerCase())
+    receta.titulo.toLowerCase().startsWith(filtro.toLowerCase())
   );
+
+  // Ordenar recetas filtradas alfabéticamente por el título
+  recetasFiltradas.sort((a, b) => a.titulo.localeCompare(b.titulo));
+
 
   return (
     <div>
