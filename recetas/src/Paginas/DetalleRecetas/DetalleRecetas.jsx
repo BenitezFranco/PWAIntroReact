@@ -1,7 +1,7 @@
 import { useParams } from "react-router-dom";
 import React, { useState, useEffect } from "react";
 import { PDFDownloadLink } from "@react-pdf/renderer";
-import Pdf from "../../Componentes/Pdf/Pdf";
+import Pdf from "../../Componentes/PDF/PDF";
 import BotonPdf from "../../Componentes/BotonPdf/BotonPdf";
 import Header from "../../Componentes/Header/Header";
 import Footer from "../../Componentes/Footer/Footer";
