@@ -51,20 +51,24 @@ const Home = () => {
         <h1 class="col-span-full text-center text-7xl">Nuestras Recetas</h1>
         <div className="col-span-1"></div>
         <div class="col-span-1 text-center text-7xl">
-        <FiltroRecetas filtro={filtro} onFiltroChange={handleChange} />
+          <FiltroRecetas filtro={filtro} onFiltroChange={handleChange} />
         </div>
         <div className="col-span-1"></div>
-        {recetasFiltradas.map((receta) => (
-        <CardReceta
-          key={receta.id}
-          id={receta.id}
-          imagen={receta.imagen}
-          titulo={receta.titulo}
-          descripcion={receta.descripcion}
-        />
-      ))}
+        {recetasFiltradas.length === 0 ? (
+          <p>No hay resultados</p>
+        ) : (
+          recetasFiltradas.map((receta) => (
+            <CardReceta
+              key={receta.id}
+              id={receta.id}
+              imagen={receta.imagen}
+              titulo={receta.titulo}
+              descripcion={receta.descripcion}
+            />
+          ))
+        )}
       </div>
-      <Footer/>
+      <Footer />
     </div>
   );
 };
