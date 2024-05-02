@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 function IterarLista({ json, arreglo, tipo }) {
   return (

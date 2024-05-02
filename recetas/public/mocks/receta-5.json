@@ -1,10 +1,10 @@
 {
   "id": 5,
   "titulo": "Locro",
-  "imagen":[
+  "imagen": [
     "/mocks/Imagenes/locro/locrox.jpg",
     "/mocks/Imagenes/locro/locro1.jpg"
-  ] ,
+  ],
   "ingredientes": [
     "Maíz blanco",
     "Carne de vaca",

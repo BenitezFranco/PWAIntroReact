@@ -24,21 +24,20 @@ const Home = () => {
     fetchRecetas();
   }, []);
 
-  //filtro 
+  //filtro
 
-  const [filtro, setFiltro] = useState('');
+  const [filtro, setFiltro] = useState("");
 
   const handleChange = (event) => {
     setFiltro(event.target.value);
   };
 
-  const recetasFiltradas = recetas.filter(receta =>
-    receta.titulo.toLowerCase().startsWith(filtro.toLowerCase())
+  const recetasFiltradas = recetas.filter((receta) =>
+    receta.titulo.toLowerCase().startsWith(filtro.toLowerCase()),
   );
 
   // Ordenar recetas filtradas alfabéticamente por el título
   recetasFiltradas.sort((a, b) => a.titulo.localeCompare(b.titulo));
-
 
   return (
     <div>

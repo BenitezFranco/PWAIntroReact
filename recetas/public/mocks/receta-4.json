@@ -1,15 +1,11 @@
 {
   "id": 4,
   "titulo": "Ñoquis de papa",
-  "imagen":[
+  "imagen": [
     "/mocks/Imagenes/noquis/noquisx.jpg",
     "/mocks/Imagenes/noquis/noquis1.jpg"
-  ] ,
-  "ingredientes": [
-    "Papas",
-    "Harina",
-    "Sal"
   ],
+  "ingredientes": ["Papas", "Harina", "Sal"],
   "instrucciones": [
     "Cocinar las papas en agua hirviendo hasta que estén tiernas.",
     "Pelar las papas y hacer un puré.",

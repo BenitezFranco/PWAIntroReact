@@ -1,11 +1,10 @@
 {
   "id": 3,
   "titulo": "Milanesa a la napolitana",
-  "imagen":[
+  "imagen": [
     "/mocks/Imagenes/milanesa/milanesax.jpg",
     "/mocks/Imagenes/milanesa/milanesa1.jpg"
-
-  ], 
+  ],
   "ingredientes": [
     "Filetes de carne (pollo, ternera o cerdo)",
     "Pan rallado",
